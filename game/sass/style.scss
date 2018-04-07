@@ -1,0 +1,29 @@
+.col {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  background: url(../images/clouds_40x25.png) no-repeat center;
+  background-color: gainsboro;
+
+  &:hover {
+    background: url(../images/explosion_40x40.png) no-repeat center;
+  }
+}
+
+.row {
+  clear: both;
+  content: "";
+}
+
+.spielfeld {
+  alignment: center;
+  margin: auto;
+  padding: auto;
+}
+
+.row {
+  .col {
+
+  }
+}

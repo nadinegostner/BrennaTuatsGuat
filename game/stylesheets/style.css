@@ -1,0 +1,26 @@
+/* line 1, ../sass/style.scss */
+.col {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  background: url(../images/clouds_40x25.png) no-repeat center;
+  background-color: gainsboro;
+}
+/* line 9, ../sass/style.scss */
+.col:hover {
+  background: url(../images/explosion_40x40.png) no-repeat center;
+}
+
+/* line 14, ../sass/style.scss */
+.row {
+  clear: both;
+  content: "";
+}
+
+/* line 19, ../sass/style.scss */
+.spielfeld {
+  alignment: center;
+  margin: auto;
+  padding: auto;
+}
