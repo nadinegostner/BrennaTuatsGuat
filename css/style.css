@@ -84,8 +84,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #E50000;
     text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+}
+
+#login {
+    background: url("../images/burning-house/brand-feuer-flammen.jpg") no-repeat center;
 }
 
 /* _____ HEADER _____ */
@@ -112,6 +117,7 @@ header a {
     text-transform: uppercase;
     margin: 0 auto;
 }
+
 li a {
     margin: 0 auto;
 }
@@ -164,6 +170,12 @@ header a:hover {
 .button p:hover, button:hover {
     background-color:#333;
     color: #E50000;
+}
+
+.whiteframe {
+    width: 720px;               /* ICH MUSS ES IRGENDWIE IN DER HTML-DATEI MIT HILFE DER GRID-KLASSEN SCHAFFEN */
+    background-color: white;
+    padding: 3em 0 3em 0;
 }
 
 
