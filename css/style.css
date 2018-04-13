@@ -178,6 +178,13 @@ header a:hover {
     padding: 3em 0 3em 0;
 }
 
+.highscore {
+    width: 560px;
+    content: "";
+    margin:auto;
+    padding: auto;
+}
+
 
 
 /* _____ FOOTER _____ */
