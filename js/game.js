@@ -7,7 +7,7 @@ var integerMaxClicks;
 var integerÜbrigeClicks = valueOf(integerMaxClicks);
 const maxStrikes = 15;
 
-if(document.getElementById("easy").checked = true){
+if (document.getElementById("easy").checked = true){
     integerMaxClicks = 45;
 }else if(document.getElementById("medium").checked = true){
     integerMaxClicks = 35;
