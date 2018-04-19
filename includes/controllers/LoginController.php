@@ -46,6 +46,9 @@ class LoginController extends Controller
 		}
 	}
 
+/*  Controller Registrierung!!!!
+	Von Registrierung auf LoginController oder eigener RegisterController!?*/
+
 	private function checkForRegisterPost()
 	{
 		if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'register')

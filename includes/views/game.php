@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Game</title>
+<?php
 
-    <link rel="stylesheet" type="text/css" href="../css/styleGame.css">
-    <script type="text/javascript" src="../js/game.js"></script>
-</head>
-<body>
+echo $this->header;
+
+?>
 
     <fiedset>
         <label>Wähle den Schwierigkeitsgrad aus:</label><br>
@@ -110,5 +105,9 @@
             <div class="col"></div>
         </div>
     </div>
-</body>
-</html>
+
+<?php
+
+echo $this->footer;
+
+?>
