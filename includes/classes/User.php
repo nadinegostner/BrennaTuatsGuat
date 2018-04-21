@@ -206,13 +206,13 @@ class User extends Database
 		//@TODO
 	}
 
-	public static function updateUser($data, $userid)
+	public static function updateUser($data)
 	{
 
 	    $db = new Database();
 
         //userid des Login holen!? Richtig mit Übergabeparameter?
-        $userid = intval($userid);
+        $userid = intval(User.userid);
 
         //eingegebene Daten
 		$firstname = $db-> escapeString($data['firstname']);
@@ -224,7 +224,7 @@ class User extends Database
 		//Datensatz des aktuellen Users ändern
 		$sql = "UPDATE 'user' 
                 SET firstname = '.$firstname', lastname = '.$lastname', username = '.$username', mail = '.$mail', password = '.$password'
-                WHERE $db->user->userid == '.$userid'";
+                WHERE $db->user->userid == '$userid'";
 		$db->query($sql);
 	}
 

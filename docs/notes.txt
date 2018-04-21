@@ -1,17 +1,35 @@
+TO DO
+
 Datei   User.php
         Methode für updateUser: userid von Login holen -> wie!? (Static! Übergabeparameter?)
+        über Klasse: User.userid
+                        -> muss noch ausprobiert werden (siehe Problem Date profil.php)
 
 Datei   registrierung.php
         Fehlermeldung {"result":false,"data":{"errorFields":{"name":"Bitte Wert eingeben!"}}}
         obwohl var name (überall?) auf username geändert
 
 Datei   profil.php
-        route!? eigener Controller? via api? restservice nötig (wie bei Adressbearbeitung)
-        Verknüpfung Navi -> Fehlermedlung Zugriff verweigert
-        route festgelegt: verbindet zu login!?   -> ProfilController verwendet
+        Problem:kein Zugriff!?
+            route!? eigener Controller? via api? restservice nötig? (wie bei Adressbearbeitung)
+            Verknüpfung Navi -> Fehlermedlung Zugriff verweigert
+            route festgelegt: verbindet zu login!?
+
+        -> ProfilController verwendet
+        Profil URL in config.php festgelegt!
 
         AddressModel -> UserModel
                 holt User-Daten (statt Adressdaten eines Users)
                 für Anzeigen von Daten in Profil
                 anpassen der Methoden!!
+
+
+________________________________________________________________________________________________________________________
+UPDATED
+
+Datei   db brennatuatsguat aktualisiert
+        mit Fremdschlüssel und difficulties-Tabelle
+
+Datei   index.php
+        erstellt -> wird Spielseite
 

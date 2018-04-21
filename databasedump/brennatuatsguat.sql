@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 20. Apr 2018 um 21:28
+-- Erstellungszeit: 21. Apr 2018 um 22:14
 -- Server-Version: 10.1.31-MariaDB
 -- PHP-Version: 7.2.3
 
@@ -27,6 +27,31 @@ USE `brennatuatsguat`;
 -- --------------------------------------------------------
 
 --
+-- Tabellenstruktur für Tabelle `difficulties`
+--
+
+DROP TABLE IF EXISTS `difficulties`;
+CREATE TABLE `difficulties` (
+  `difficultyid` int(11) NOT NULL,
+  `description` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- RELATIONEN DER TABELLE `difficulties`:
+--
+
+--
+-- Daten für Tabelle `difficulties`
+--
+
+INSERT INTO `difficulties` (`difficultyid`, `description`) VALUES
+(1, 'easy'),
+(3, 'hard'),
+(2, 'medium');
+
+-- --------------------------------------------------------
+
+--
 -- Tabellenstruktur für Tabelle `highscore`
 --
 
@@ -40,6 +65,10 @@ CREATE TABLE `highscore` (
 
 --
 -- RELATIONEN DER TABELLE `highscore`:
+--   `playerid`
+--       `user` -> `userid`
+--   `difficulty`
+--       `difficulties` -> `difficultyid`
 --
 
 -- --------------------------------------------------------
@@ -63,14 +92,31 @@ CREATE TABLE `user` (
 --
 
 --
+-- Daten für Tabelle `user`
+--
+
+INSERT INTO `user` (`userid`, `firstname`, `lastname`, `username`, `mail`, `password`) VALUES
+(2, 'Max', 'Mustermann', 'Fackelmann', 'max.mustermann@fackelmann.com', 'musterpasswort'),
+(3, 'Maria', 'Musterfrau', 'fackeldame', 'fackeldame@mail.com', 'fackeldame');
+
+--
 -- Indizes der exportierten Tabellen
 --
+
+--
+-- Indizes für die Tabelle `difficulties`
+--
+ALTER TABLE `difficulties`
+  ADD PRIMARY KEY (`difficultyid`),
+  ADD UNIQUE KEY `descriptionDifficulty` (`description`);
 
 --
 -- Indizes für die Tabelle `highscore`
 --
 ALTER TABLE `highscore`
-  ADD PRIMARY KEY (`highscoreid`) USING BTREE;
+  ADD PRIMARY KEY (`highscoreid`) USING BTREE,
+  ADD UNIQUE KEY `difficultyHighscore` (`difficulty`),
+  ADD KEY `playerid` (`playerid`);
 
 --
 -- Indizes für die Tabelle `user`
@@ -84,6 +130,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT für Tabelle `difficulties`
+--
+ALTER TABLE `difficulties`
+  MODIFY `difficultyid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT für Tabelle `highscore`
 --
 ALTER TABLE `highscore`
@@ -93,7 +145,18 @@ ALTER TABLE `highscore`
 -- AUTO_INCREMENT für Tabelle `user`
 --
 ALTER TABLE `user`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Constraints der exportierten Tabellen
+--
+
+--
+-- Constraints der Tabelle `highscore`
+--
+ALTER TABLE `highscore`
+  ADD CONSTRAINT `highscore_ibfk_1` FOREIGN KEY (`playerid`) REFERENCES `user` (`userid`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `highscore_ibfk_2` FOREIGN KEY (`difficulty`) REFERENCES `difficulties` (`difficultyid`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -9,7 +9,7 @@ echo $this->header;
         <h1>Profil</h1>
 
 
-        <form method="put" action="api">
+        <form method="put" action="api/profil">
             <div class="form-row">
                 <div class="form-group grid8">
                     <label for="validationDefault01">First name</label>
@@ -63,8 +63,34 @@ echo $this->header;
 
             <button class="button grid4" type="submit">Save changes</button>
         </form>
+
+        <div class="clear"></div>
+
+        <div class="modal fade<?php if(!$this->userid):?> in<?php endif; ?>" id="toLoginModal" tabindex="-1" role="dialog" aria-labelledby="toLoginModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title" id="toLoginModalLabel">Meld dich an!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <p class="col-xs-12">
+                                Damit wir dein Profil anzeigen können, musst du eingeloggt sein!!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                        <button type="button" id="toLogin" class="btn btn-primary">Zum Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <div class="clear"></div>
+
+
+
 
     <script type="text/javascript">
 

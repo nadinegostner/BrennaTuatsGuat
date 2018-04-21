@@ -11,10 +11,10 @@ class IndexController extends Controller
 
 	public function run()
 	{
-		$this->view->title = "Übersicht";
+		$this->view->title = "Start";
 		$this->view->username = $this->user->username;
 
-		$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
+		$this->view->userid = UserModel::getDataById($this->user->userid);
 	}
 
 }

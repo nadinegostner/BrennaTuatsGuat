@@ -1,19 +1,23 @@
 <?php
 
-
 class ProfilController extends Controller
 {
-	protected $viewFileName = "profil"; //this will be the View that gets the data...
-	protected $loginRequired = true;
+    protected $viewFileName = "profil"; //this will be the View that gets the data...
+    protected $loginRequired = false;
 
+    public function run()
+    {
+        $this->view->title = "Profil";
 
-	public function run()
-	{
-		$this->view->title = "Profil";
-		$this->view->username = $this->user->username;
+        if($this->isLoggedIn){
+            $this->view->username = $this->user->username;
 
-		$this->view->userid = UserModel::getDataById($this->user->userid);
-		//Model für Highscore & Profil!?
-	}
+            $this->view->userid = UserModel::getDataById($this->user->userid);
+        }else{
+
+        }
+
+        //Model für Highscore & Profil!?
+    }
 
 }
