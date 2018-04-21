@@ -28,7 +28,7 @@
                 <li class="offset2 grid3"><a href="#">Start</a></li>
                 <li class="grid3"><a href="#">Highscore</a></li>
                 <li class="grid3"><a href="#">Profil</a></li>
-                <li class="grid3 suffix2"><a href="#">Impressum</a></li>
+                <li class="grid3 suffix2"><a href="#">Abmelden</a></li>
             </ul>
         </nav>
 
