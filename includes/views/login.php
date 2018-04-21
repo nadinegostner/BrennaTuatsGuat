@@ -10,14 +10,14 @@ echo $this->header;
             <div class="form-group">
                 <div class="form-group offset1 grid10 ">
                     <label for="validationDefaultUsername">Username</label>
-                    <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Fackelmann" aria-describedby="inputGroupPrepend2" required>
+                    <input type="text" name="username" class="form-control" id="validationDefaultUsername" placeholder="Fackelmann" aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
             <div class="clear"></div>
             <div class="form-row">
                 <div class="form-group offset1 grid10 ">
                     <label for="password validationDefault04">Passwort</label>
-                    <input type="password" class="form-control" id="password validationDefault04" placeholder="** Psst! Geheim. **" required>
+                    <input type="pwd" name="username" class="form-control" id="password validationDefault04" placeholder="** Psst! Geheim. **" required>
                 </div>
             </div>
             <div class="clear"></div>

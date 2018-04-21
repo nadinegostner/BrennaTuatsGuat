@@ -1,0 +1,17 @@
+Datei   User.php
+        Methode für updateUser: userid von Login holen -> wie!? (Static! Übergabeparameter?)
+
+Datei   registrierung.php
+        Fehlermeldung {"result":false,"data":{"errorFields":{"name":"Bitte Wert eingeben!"}}}
+        obwohl var name (überall?) auf username geändert
+
+Datei   profil.php
+        route!? eigener Controller? via api? restservice nötig (wie bei Adressbearbeitung)
+        Verknüpfung Navi -> Fehlermedlung Zugriff verweigert
+        route festgelegt: verbindet zu login!?   -> ProfilController verwendet
+
+        AddressModel -> UserModel
+                holt User-Daten (statt Adressdaten eines Users)
+                für Anzeigen von Daten in Profil
+                anpassen der Methoden!!
+

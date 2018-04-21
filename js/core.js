@@ -3,14 +3,14 @@
     so the following line would be
     $(document).ready(function() {
 */
-jQuery(document).ready(function() {
+$(document).ready(function() {
 
     var editModal = $('#editModal');
 
     editModal.on('show.bs.modal', function (event) {
 
-        var button = $(event.relatedTarget) // Button that triggered the modal
-        var addressId = button.data('id') // Extract info from data-* attributes
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var addressId = button.data('id'); // Extract info from data-* attributes
 
         var that = this;
 
@@ -42,7 +42,7 @@ jQuery(document).ready(function() {
             'success': function(receivedData) {
 
                 if(receivedData.result) {
-                    var modal = $(that)
+                    var modal = $(that);
                     modal.find('.modal-body').html(receivedData.data.html);
                     editModal.find('.btn-primary').prop('disabled', false);
                 } else { //there was an error - do something!

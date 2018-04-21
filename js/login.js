@@ -7,11 +7,11 @@ jQuery(document).ready(function() {
 
     var registerModal = $('#registerModal');
 
-    $('.registerOverlay').click(function(e) {
+    /*$('.registerOverlay').click(function(e) {
         e.preventDefault();
 
         registerModal.modal('show');
-    });
+    });*/
 
 
     //this is that we are able to trigger a submit although a button was clicked outside of your form!
@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
             that = registerModal.find('.btn-primary').get(0);
         }
 
-        var nonEmptyFields = ['#name', '#pwd', '#pwd2'];
+        var nonEmptyFields = ['#username', '#pwd', '#pwd2'];
 
         for(i = 0; i < nonEmptyFields.length; i++) {
             if($(nonEmptyFields[i]).val() == '') {
@@ -52,7 +52,7 @@ jQuery(document).ready(function() {
                     $('#pwd2').closest('.form-group').addClass('has-error');
                     hasError = true;
                     registerModal.find('.btn-primary').prop('disabled', false);
-                } else {
+            } else {
                     //everything fine
 
                     $.ajax({

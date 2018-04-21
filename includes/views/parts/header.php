@@ -7,10 +7,13 @@
         <!--einbinden CSS/JS Header: von root ausgehen!-->
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/toastr.min.css" rel="stylesheet" type="text/css">
         <link href="css/960gs_16col.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
 
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/core.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
 
         <?php if($this->current == 'game'): ?>
             <!--bindet Style und JavaScript nur für Spiel ein-->
@@ -27,10 +30,8 @@
             <ul>
                 <li class="offset2 grid3"><a href="#">Start</a></li>
                 <li class="grid3"><a href="#">Highscore</a></li>
-                <li class="grid3"><a href="#">Profil</a></li>
+                <li class="grid3"><a href="includes/views/profil.php">Profil</a></li>
                 <li class="grid3 suffix2"><a href="#">Impressum</a></li>
             </ul>
         </nav>
-
-
     </header>

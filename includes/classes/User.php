@@ -7,7 +7,7 @@
 class User extends Database
 {
 	public $username = '';
-	public $id = '';
+	public $userid = '';
 
 	public $isLoggedIn = false;
 
@@ -85,7 +85,7 @@ class User extends Database
 
 	public function login($username, $password)
 	{
-		$sql = "SELECT `id`,`password` FROM `user` WHERE `name`='" . $this->escapeString($username) . "'";
+		$sql = "SELECT `userid`,`password` FROM `user` WHERE `username`='" . $this->escapeString($username) . "'";
 		$result = $this->query($sql);
 
 
@@ -101,7 +101,7 @@ class User extends Database
 		if(password_verify($password, $row->password))
 		{
 			$this->username = $username;
-			$this->id = $row->id;
+			$this->userid = $row->userid;
 			$this->isLoggedIn = true;
 
 			return true;
@@ -111,10 +111,10 @@ class User extends Database
 		return false;
 	}
 
-	public static function getById($id)
+	public static function getById($userid)
 	{
-		$id = intval($id);
-		$sql = "SELECT * FROM `user` WHERE `id`=".$id;
+		$userid = intval($userid);
+		$sql = "SELECT * FROM `user` WHERE `userid`='.$userid'";
 
 		$db = new Database();
 		$result = $db->query($sql);
@@ -126,7 +126,7 @@ class User extends Database
 			$user = new User();
 
 			$user->username = $data['username'];
-			$user->id = $id;
+			$user->userid = $userid;
 
 			return $user;
 		}
@@ -137,7 +137,7 @@ class User extends Database
 	public function logout()
 	{
 		$this->username = null;
-		$this->id = null;
+		$this->userid = null;
 		$this->isLoggedIn = false;
 		$this->shipIt();
 
@@ -177,7 +177,7 @@ class User extends Database
 		$db = new Database();
 
 		//check if user exists...
-		$sql = "SELECT COUNT(`id`) AS num FROM `user` WHERE `name`='".$db->escapeString($username)."'";
+		$sql = "SELECT COUNT(`userid`) AS num FROM `user` WHERE `username`='".$db->escapeString($username)."'";
 		$result = $db->query($sql);
 
 		$row = $db->fetchObject($result);
@@ -197,7 +197,7 @@ class User extends Database
 		$username = $db->escapeString($data['username']);
 		$password = password_hash($db->escapeString($data['password']), PASSWORD_BCRYPT);
 
-		$sql = "INSERT INTO `user`(`name`,`password`) VALUES('".$username."','".$password."')";
+		$sql = "INSERT INTO `user`(`username`,`password`) VALUES('".$username."','".$password."')";
 		$db->query($sql);
 	}
 
@@ -206,18 +206,35 @@ class User extends Database
 		//@TODO
 	}
 
-	public static function updateUser($data)
+	public static function updateUser($data, $userid)
 	{
-		//@TODO
+
+	    $db = new Database();
+
+        //userid des Login holen!? Richtig mit Übergabeparameter?
+        $userid = intval($userid);
+
+        //eingegebene Daten
+		$firstname = $db-> escapeString($data['firstname']);
+		$lastname = $db->escapeString($data['lastname']);
+		$username = $db->escapeString($data['username']);
+		$mail = $db->escapeString($data['mail']);
+		$password = $db->escapeString($data['password']);
+
+		//Datensatz des aktuellen Users ändern
+		$sql = "UPDATE 'user' 
+                SET firstname = '.$firstname', lastname = '.$lastname', username = '.$username', mail = '.$mail', password = '.$password'
+                WHERE $db->user->userid == '.$userid'";
+		$db->query($sql);
 	}
 
 	public function delete()
 	{
-		self::deleteUser($this->id);
+		self::deleteUser($this->userid);
 	}
 
 	public function update($data)
 	{
-		self::updateUser($this->id, $data);
+		self::updateUser($this->userid, $data);
 	}
 }
