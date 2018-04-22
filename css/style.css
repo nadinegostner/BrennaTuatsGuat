@@ -152,24 +152,24 @@ header a:hover {
 }
 
 .button, button {
-    text-align:center;
-    text-decoration:none;
-    color:white;
+    text-align:center                           !important;
+    text-decoration:none                        !important;
+    color:white                                 !important;
 }
 
 .button p, button {
-    padding: 10px;
-    color: white;
-    background-color: #E50000;
-    border-radius:5px;
-    transition:background-color 300ms linear;
-    transition:color 300ms linear;
-    text-transform: uppercase;
+    padding: 10px                               !important;
+    color: white                                !important;
+    background-color: #E50000                   !important;
+    border-radius:5px                           !important;
+    transition:background-color 300ms linear    !important;
+    transition:color 300ms linear               !important;
+    text-transform: uppercase                   !important;
 }
 
 .button p:hover, button:hover {
-    background-color:#333;
-    color: #E50000;
+    background-color:#333                       !important;
+    color: #E50000                              !important;
 }
 
 .whiteframe {

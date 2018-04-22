@@ -26,7 +26,9 @@ class LoginController extends Controller
 	{
 		if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'login')
 		{
-			//probably a login attempt!
+
+
+		    //probably a login attempt!
 
 			$username = $_POST['username'];
 			$password = $_POST['password'];

@@ -24,10 +24,11 @@
             <!--bindet Overlay-Script für Zum-Login-Feld ein-->
             <script type="text/javascript" src="js/profil.js"></script>
         <?php endif; ?>
-        <?php if($this->current == 'login'): ?>
-            <!--bindet JS für Login ein-->
-            <script type="text/javascript" src="js/login.js"></script>
+        <?php if($this->current == 'register'): ?>
+            <!--bindet JS für Registrierung ein-->
+            <script type="text/javascript" src="js/register.js"></script>
         <?php endif; ?>
+
 
     </head>
 
