@@ -34,17 +34,18 @@
     </head>
 
     <body>
-    <header>
+        <header>
 
 
-        <nav>
-            <ul>
+            <nav>
+                <ul>
+
 
                 <li class="col-md-3"><a href="index">Start</a></li>
-                <li class="col-md-3"><a href="highscore">Highscore</a></li>     <!--Links funktionieren nicht!-->
-                <li class="col-md-3"><a href="includes/views/profil.php">Profil</a></li>
+                <li class="col-md-3"><a href="highscore">Highscore</a></li>
+                <li class="col-md-3"><a href="includes/views/profil.php">Profil</a></li>    <!--entfernen-->
                 <li class="col-md-3"><a href="#">Logout</a></li>
 
-            </ul>
-        </nav>
-    </header>
+                </ul>
+            </nav>
+        </header>

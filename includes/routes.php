@@ -20,5 +20,4 @@ $route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'l
 $route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 $route['/herbertfranz'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 
-
 $route['/highscore'] = array('controller' => 'HighscoreController', 'uniqueName' => 'highscore');

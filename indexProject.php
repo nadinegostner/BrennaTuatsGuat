@@ -17,98 +17,98 @@ if(!$db)
 
         <div id="game">
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
 
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
 
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
 
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
 
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
 
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
 
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
 
             <div class="row">
-                <div class="offset4 grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
-                <div class="grid1 field"></div>
+                <div class="offset-md-2 col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
+                <div class="col-md-1 field"></div>
             </div>
             <div class="clear"></div>
         </div>
@@ -116,10 +116,11 @@ if(!$db)
 
 
         <div class="buttonmenu">
-            <div class="button grid4"><p>easy cheesy</p></div>
-            <div class="button grid4"><p>medium</p></div>
-            <div class="button grid4"><p>bloody difficult</p></div>
-            <div class="button grid4"><p>clicks</p></div>
+            <button class="button col-md-3">leicht</button>
+            <button class="button col-md-3">normal</button>
+            <button class="button col-md-3">Profiz&uuml;ndler</button>
+            <button class="button col-md-3">Klicks</button>
+
         </div>
 
     </main>

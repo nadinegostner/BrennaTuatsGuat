@@ -4,6 +4,7 @@ var fields = document.getElementsByClassName("col");
 var empty = document.getElementsByClassName("empty");
 var integerCounter;
 var integerMaxClicks;
+var integerÜbrigeClicks = valueOf(integerMaxClicks);
 //var integerÜbrigeClicks = valueOf(integerMaxClicks);
 const maxStrikes = 15;
 
@@ -23,6 +24,8 @@ for(integerCounter = 0; integerCounter < integerMaxClicks; integerCounter++) {
     if (strikes.onclick) {
         function changeStrike() {
             strikes.style.backgroundImage = "url(../images/fire_40x40.png) no-repeat center;";
+            //counter strikes -> highscore (tatsächlich gebrauchte Klicks)
+            //gesamt Strikes: wenn alle getroffen - Abbruch/Gewonnen
         }
         console.log("Treffer!");
 
@@ -33,6 +36,11 @@ for(integerCounter = 0; integerCounter < integerMaxClicks; integerCounter++) {
         console.log("Kein Treffer. Versuchs erneut!")
     }
 }
+
+//maxClicks vorbei -> wieviele Strikes getroffen?
+//getroffen < gesamtStrikes --> verloren (MEldung try again, Link)
+
+//score speichern
 
 if(integerCounter = integerMaxClicks){
 
