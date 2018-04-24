@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 21. Apr 2018 um 22:14
+-- Erstellungszeit: 24. Apr 2018 um 11:22
 -- Server-Version: 10.1.31-MariaDB
 -- PHP-Version: 7.2.3
 
@@ -31,10 +31,12 @@ USE `brennatuatsguat`;
 --
 
 DROP TABLE IF EXISTS `difficulties`;
-CREATE TABLE `difficulties` (
-  `difficultyid` int(11) NOT NULL,
-  `description` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `difficulties` (
+  `difficultyid` int(11) NOT NULL AUTO_INCREMENT,
+  `description` varchar(10) NOT NULL,
+  PRIMARY KEY (`difficultyid`),
+  UNIQUE KEY `descriptionDifficulty` (`description`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- RELATIONEN DER TABELLE `difficulties`:
@@ -56,11 +58,14 @@ INSERT INTO `difficulties` (`difficultyid`, `description`) VALUES
 --
 
 DROP TABLE IF EXISTS `highscore`;
-CREATE TABLE `highscore` (
-  `highscoreid` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `highscore` (
+  `highscoreid` int(11) NOT NULL AUTO_INCREMENT,
   `playerid` int(11) NOT NULL,
   `score` int(11) NOT NULL COMMENT 'clicks needed',
-  `difficulty` int(11) NOT NULL COMMENT '1: easy, 2: medium, 3: hard'
+  `difficulty` int(11) NOT NULL COMMENT '1: easy, 2: medium, 3: hard',
+  PRIMARY KEY (`highscoreid`) USING BTREE,
+  UNIQUE KEY `difficultyHighscore` (`difficulty`),
+  KEY `playerid` (`playerid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -78,14 +83,16 @@ CREATE TABLE `highscore` (
 --
 
 DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
-  `userid` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `user` (
+  `userid` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `mail` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`userid`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- RELATIONEN DER TABELLE `user`:
@@ -98,54 +105,6 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`userid`, `firstname`, `lastname`, `username`, `mail`, `password`) VALUES
 (2, 'Max', 'Mustermann', 'Fackelmann', 'max.mustermann@fackelmann.com', 'musterpasswort'),
 (3, 'Maria', 'Musterfrau', 'fackeldame', 'fackeldame@mail.com', 'fackeldame');
-
---
--- Indizes der exportierten Tabellen
---
-
---
--- Indizes für die Tabelle `difficulties`
---
-ALTER TABLE `difficulties`
-  ADD PRIMARY KEY (`difficultyid`),
-  ADD UNIQUE KEY `descriptionDifficulty` (`description`);
-
---
--- Indizes für die Tabelle `highscore`
---
-ALTER TABLE `highscore`
-  ADD PRIMARY KEY (`highscoreid`) USING BTREE,
-  ADD UNIQUE KEY `difficultyHighscore` (`difficulty`),
-  ADD KEY `playerid` (`playerid`);
-
---
--- Indizes für die Tabelle `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`userid`),
-  ADD UNIQUE KEY `username` (`username`);
-
---
--- AUTO_INCREMENT für exportierte Tabellen
---
-
---
--- AUTO_INCREMENT für Tabelle `difficulties`
---
-ALTER TABLE `difficulties`
-  MODIFY `difficultyid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT für Tabelle `highscore`
---
-ALTER TABLE `highscore`
-  MODIFY `highscoreid` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT für Tabelle `user`
---
-ALTER TABLE `user`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints der exportierten Tabellen

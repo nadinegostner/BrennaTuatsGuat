@@ -33,17 +33,17 @@
     </head>
 
     <body>
-    <header>
+        <header>
 
 
-        <nav>
-            <ul>
+            <nav>
+                <ul>
 
-                <li class="offset2 grid3"><a href="index">Start</a></li>
-                <li class="grid3"><a href="highscore">Highscore</a></li>     <!--Links funktionieren nicht!-->
-                <li class="grid3"><a href="includes/views/profil.php">Profil</a></li>
-                <li class="grid3 suffix2"><a href="#">Impressum</a></li>
+                    <li class="offset2 grid3"><a href="index">Start</a></li>
+                    <li class="grid3"><a href="highscore">Highscore</a></li>     <!--Links funktionieren nicht!-->
+                    <li class="grid3"><a href="profil">Profil</a></li>
+                    <li class="grid3 suffix2"><a href="#">Impressum</a></li>
 
-            </ul>
-        </nav>
-    </header>
+                </ul>
+            </nav>
+        </header>

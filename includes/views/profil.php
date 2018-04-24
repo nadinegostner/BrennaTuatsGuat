@@ -66,6 +66,8 @@ echo $this->header;
 
         <div class="clear"></div>
 
+
+
         <div class="modal fade<?php if(!$this->userid):?> in<?php endif; ?>" id="toLoginModal" tabindex="-1" role="dialog" aria-labelledby="toLoginModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

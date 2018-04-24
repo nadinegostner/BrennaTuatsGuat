@@ -2,10 +2,10 @@
 
 class UserModel
 {
-	public static function getDataById($userid)
+	public static function getDataById($userId)
 	{
 		$db = new Database();
-		$sql = "SELECT * FROM user WHERE userid=".intval($userid);
+            $sql = "SELECT * FROM user WHERE userid=".intval($userId);
 
 		$result = $db->query($sql);
 

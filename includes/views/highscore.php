@@ -1,6 +1,6 @@
 <?php
 
-require("../../connectiondb.php");
+//require("../../connectiondb.php");
 
 echo $this->header;
 

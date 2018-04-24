@@ -9,6 +9,7 @@ class Address extends RESTClass
 		$this->Database = new Database();
 	}
 
+
 	public function __destruct()
 	{
 		$this->Database = null;
@@ -22,10 +23,10 @@ class Address extends RESTClass
 
 			if(isset($data['id']))
 			{
-				$dataForView = AddressModel::getAddressById($data['id']);
+				$dataForView = UserModel::getDataById($data['id']);
 				$user = new User();
 
-				if($dataForView->userId = $user->id)
+				if($dataForView->userid = $user->userid)
 				{
 					//ok - its your address!
 
@@ -76,9 +77,9 @@ class Address extends RESTClass
 
 		if(!$error)
 		{
-			$data['userId'] = $user->id;
+			$data['userId'] = $user->userid;
 
-			AddressModel::createNewAddress($data);
+			UserModel::createNewUser($data);
 
 			$jsonResponse = new JSON();
 			$jsonResponse->result = true;
@@ -114,9 +115,9 @@ class Address extends RESTClass
 
 		if(!$error)
 		{
-			$addressObj = AddressModel::getAddressById($data['id']);
+			$addressObj = UserModel::getDataById($data['id']);
 
-			if($addressObj->userId != $user->id)
+			if($addressObj->userId != $user->userid)
 			{
 				$jsonResponse = new JSON();
 				$jsonResponse->result = false;
@@ -125,7 +126,7 @@ class Address extends RESTClass
 			}
 			else
 			{
-				AddressModel::saveAddress($data);
+				UserModel::saveUser($data);
 
 				$jsonResponse = new JSON();
 				$jsonResponse->result = true;
@@ -156,9 +157,9 @@ class Address extends RESTClass
 		}
 		else
 		{
-			$addressObj = AddressModel::getAddressById($data['id']);
+			$addressObj = UserModel::getDataById($data['id']);
 
-			if($addressObj->userId != $user->id)
+			if($addressObj->userId != $user->userid)
 			{
 				$jsonResponse = new JSON();
 				$jsonResponse->result = false;
@@ -167,7 +168,7 @@ class Address extends RESTClass
 			}
 			else
 			{
-				AddressModel::deleteAddress($addressObj->id);
+				UserModel::deleteAddress($addressObj->id);
 
 				$jsonResponse = new JSON();
 				$jsonResponse->result = true;
