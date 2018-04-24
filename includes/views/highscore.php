@@ -1,7 +1,5 @@
 <?php
 
-require("../../connectiondb.php");
-
 echo $this->header;
 
 ?>
@@ -22,21 +20,13 @@ echo $this->header;
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>  <!-- Klasse hinzufügen um über Java Reihennummer rauf zu zählen und auszugeben?-->
-                    <td>very best highscore</td>
-                    <td>Fackelmann</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>score</td>
-                    <td>Thornton</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>next score</td>
-                    <td>@twitter</td>
-                </tr>
+                <?php foreach($this->highscores as $highscore): ?>
+                    <tr>
+                        <th scope="row">1</th>  <!-- Klasse hinzufügen um über Java Reihennummer rauf zu zählen und auszugeben?-->
+                        <td><?php echo $highscore->score; ?></td>
+                        <td><?php echo $highscore->playerid; ?></td>
+                    </tr>
+                <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

@@ -9,7 +9,16 @@ echo $this->header;
 
         <h1>Registrierung</h1>
 
-        <form method="post" action="login" id="registerModal" role="document" aria-labelledby="registerModalLabel">
+       <?php if($this->RegisterSuccessful): ?>
+
+           <h2>erfolgreich! Herzlichen Glückwunsch!!</h2>
+           <p>
+               Klicken Sie <a href="login">hier um sich anzumelden</a>.
+           </p>
+
+        <?php else: ?>
+
+        <form method="post" id="registerModal" role="document" aria-labelledby="registerModalLabel">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="validationDefault01">First name</label>
@@ -61,6 +70,8 @@ echo $this->header;
                 <button class="button col-md-3 btn-primary" type="submit">Sign in</button>
             </div>
         </form>
+
+        <?php endif; ?>
 
 
     </main>

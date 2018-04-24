@@ -21,7 +21,7 @@ class UserModel
 	{
 		$db = new Database();
 
-		$sql = "SELECT * FROM address WHERE userId=".intval($userId);
+		$sql = "SELECT * FROM address WHERE userid=".intval($userId);
 		$result = $db->query($sql);
 
 		if($db->numRows($result) > 0)
