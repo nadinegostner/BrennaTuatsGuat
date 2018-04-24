@@ -1,6 +1,10 @@
 <?php
-
-echo $this->header;
+$db = mysqli_connect("localhost", "test1", "test1", "test1");
+if(!$db)
+{
+    exit("Verbindungsfehler: ".mysqli_connect_error());
+}
+//echo $this->header;
 
 ?>
 
@@ -127,6 +131,6 @@ echo $this->header;
     </footer>
 <?php
 
-echo $this->footer;
+//echo $this->footer;
 
 ?>
