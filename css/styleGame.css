@@ -1,0 +1,26 @@
+/* line 1, ../scss/styleGame.scss */
+.col {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  background: url(../images/clouds_40x25.png) no-repeat center;
+  background-color: gainsboro;
+}
+/* line 9, ../scss/styleGame.scss */
+.col:hover {
+  background: url(../images/explosion_40x40.png) no-repeat center;
+}
+
+/* line 14, ../scss/styleGame.scss */
+.row {
+  clear: both;
+  content: "";
+}
+
+/* line 19, ../scss/styleGame.scss */
+.spielfeld {
+  alignment: center;
+  margin: auto;
+  padding: auto;
+}

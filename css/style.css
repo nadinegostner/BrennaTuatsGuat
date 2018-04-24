@@ -6,6 +6,8 @@ header, footer {margin:0; padding:0;}
 
 /* _____ GRID _____ */
 
+/*
+
 *[class*="grid"] {
     margin-left:10px;
     margin-right:10px;
@@ -29,11 +31,6 @@ header, footer {margin:0; padding:0;}
 .grid14 {width:820px;}
 .grid15 {width:880px;}
 .grid16 {width:940px;}
-
-.clear {
-    clear:both;
-    display:block;
-}
 
 .offset1 {margin-left:70px;}
 .offset2 {margin-left:130px;}
@@ -67,6 +64,13 @@ header, footer {margin:0; padding:0;}
 .suffix14 {padding-right: 840px;}
 .suffix15 {padding-right: 900px;}
 
+*/
+
+
+.clear {
+    clear:both;
+    display:block;
+}
 
 /* _____ BODY _____ */
 
@@ -90,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #login {
-    background: url("../images/burning-house/brand-feuer-flammen.jpg") no-repeat center;
+    background: url("../includes/images/burning-house/brand-feuer-flammen.jpg") no-repeat center;
 }
 
 /* _____ HEADER _____ */
@@ -128,6 +132,13 @@ header a:hover {
 
 /* _____ MAIN _____ */
 
+main {
+    padding-top: 10em;
+/*
+    width: 960px;
+    margin: 0 auto;
+*/
+}
 
 #wrapper {
     padding-top: 10em;
@@ -167,7 +178,7 @@ header a:hover {
     text-transform: uppercase                   !important;
 }
 
-.button p:hover, button:hover {
+.button p:hover, button:hover, button:active {
     background-color:#333                       !important;
     color: #E50000                              !important;
 }
@@ -188,6 +199,7 @@ header a:hover {
 
 
 /* _____ FOOTER _____ */
+
 
 footer {
     background-color: #d1d1d1;

@@ -1,8 +1,5 @@
 <?php
 
-/**
- * @author Daniel Hoover <https://github.com/danielhoover>
- */
 class RegisterController extends Controller
 {
 	protected $viewFileName = "registrierung"; //this will be the View that gets the data...
@@ -16,29 +13,7 @@ class RegisterController extends Controller
 		$this->checkForRegisterPost();
 	}
 
-	/*private function checkForLoginPost()
-	{
-		if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'login')
-		{
-			//probably a login attempt!
 
-			$username = $_POST['username'];
-			$password = $_POST['password'];
-
-			if($username != "" && $password != "")
-			{
-				if($this->user->login($username, $password))
-				{
-					$this->user->redirectToIndex();
-				}
-				else
-				{
-					$this->view->errorPasswd = true;
-				}
-			}
-
-		}
-	}*/
 
 /*  Controller Registrierung!!!!
 	Von Registrierung auf LoginController oder eigener RegisterController!?
@@ -82,33 +57,29 @@ class RegisterController extends Controller
 
 				if(!$error)
 				{
+				    $mail = $_POST['mail'];
+				    $firstname = $_POST['firstname'];
+				    $lastname = $_POST['lastname'];
+
+
 					//check if username exists already...
 					if(User::existsWithUsername($username) == false)
 					{
-						User::createUser(array('username' => $username, 'password' => $password));
+						User::createUser(array('username' => $username, 'password' => $password, 'mail' => $mail, 'fristname' => $firstname, 'lastname' => $lastname));
 
-						$jsonResponse = new JSON();
-						$jsonResponse->result = true;
-						$jsonResponse->setMessage("Benutzer wurde erfolgreich hinzugefügt!");
-						$jsonResponse->send();
+						$this->view->RegisterSuccessful = true;
 					}
 					else
 					{
 						$errorFields['username'] = "Benutzername ist schon vorhanden!";
 
-						$jsonResponse = new JSON();
-						$jsonResponse->result = false;
-						$jsonResponse->setData(array('errorFields' => $errorFields));
-						$jsonResponse->send();
+						$this->view->UsernameExists = true;
 					}
 
 				}
 			}
 
-			$jsonResponse = new JSON();
-			$jsonResponse->result = false;
-			$jsonResponse->setData(array('errorFields' => $errorFields));
-			$jsonResponse->send();
+			$this->view->errorFields = $errorFields;
 		}
 	}
 }
