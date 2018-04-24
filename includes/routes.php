@@ -18,4 +18,3 @@ $route['/profil.html'] = array('controller' => 'ProfilController', 'uniqueName' 
 
 $route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 $route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
-
