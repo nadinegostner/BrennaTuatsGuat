@@ -4,13 +4,15 @@ echo $this->header;
 
 ?>
     <main id="wrapper login">
-        <div class="col-md-12">
-            <img src="#" alt="Logo Brenna Tuats Guat">              <!-- Logo noch einfügen -->
+        <div class="col-md-12" id="logo">
+            <img src="images/Logo.png" alt="Logo Brenna Tuats Guat">
         </div>
 
         <h1>Login</h1>
 
+        <!--Formular Login-->
         <form action="login" method="post" class="col-md-12">
+            <!--Ausgabe Fehlermeldung-->
             <?php if($this->errorPasswd == true): ?>
                 <div class="alert alert-danger alert-dismissible fade in" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">

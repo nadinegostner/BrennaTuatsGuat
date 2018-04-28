@@ -16,8 +16,7 @@ class RegisterController extends Controller
 
 
 /*  Controller Registrierung!!!!
-	Von Registrierung auf LoginController oder eigener RegisterController!?
-    eigener!*/
+	Von Registrierung auf eigenen RegisterController!?*/
 
 	private function checkForRegisterPost()
 	{
@@ -32,6 +31,7 @@ class RegisterController extends Controller
 
 			foreach($requiredFields as $fieldName)
 			{
+			    /*checks if fields are empty*/
 				if(!isset($_POST[$fieldName]) || $_POST[$fieldName] == '')
 				{
 					$error = true;
@@ -39,6 +39,7 @@ class RegisterController extends Controller
 				}
 			}
 
+			/*__Kontrolle funktioniert nicht!! keine Registrierung aber auch keine Ausgabe der Fehlermeldungen__*/
 			if(!$error)
 			{
 				$password = $_POST['pwd'];
@@ -65,7 +66,7 @@ class RegisterController extends Controller
 					//check if username exists already...
 					if(User::existsWithUsername($username) == false)
 					{
-						User::createUser(array('username' => $username, 'password' => $password, 'mail' => $mail, 'fristname' => $firstname, 'lastname' => $lastname));
+						User::createUser(array('username' => $username, 'pwd' => $password, 'mail' => $mail, 'firstname' => $firstname, 'lastname' => $lastname));
 
 						$this->view->RegisterSuccessful = true;
 					}
