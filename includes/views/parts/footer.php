@@ -12,7 +12,7 @@
             </p>
         </div>
         <div id="linkImpressum">
-                <a href="../impressum.php">Impressum</a>
+                <a href="impressum">Impressum</a>
         </div>
     </section>
     <div class="clear"></div>

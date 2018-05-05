@@ -19,7 +19,7 @@ echo $this->header;
     <div class="row">
         <h1 class="col-xs-12">Login</h1>
         <p class="col-xs-12">
-            Melden Sie sich bitte an, um Webopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
+            Melden Sie sich bitte an, um Brenna Tuats Guat spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="registrierung" class="registerOverlay">hier registrieren</a>.
         </p>
 
         <form method="post" action="login" class="form-horizontal col-xs-12">

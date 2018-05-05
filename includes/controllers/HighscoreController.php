@@ -12,7 +12,9 @@ class HighscoreController extends Controller
 		$this->view->username = $this->user->username;
 		$this->view->userid = $this->user->userid;
 
-		$this->view->highscores = HighscoreModel::getAllScores();
+		//$this->view->highscores = HighscoreModel::getAllScores();
+
+        $this->view->highscores = HighscoreModel::getAllScores();
 	}
 
 

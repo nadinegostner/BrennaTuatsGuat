@@ -39,10 +39,10 @@
 
             <nav>
                 <ul>
-                    <li class="col-md-3"><a href="index">Start</a></li>
-                    <li class="col-md-3"><a href="highscore">Highscore</a></li>
-                    <li class="col-md-3"><a href="includes/views/profil.php">Profil</a></li>    <!--entfernen-->
-                    <li class="col-md-3"><a href="#">Logout</a></li>
+                    <li class="col-md-4"><a href="index">Start</a></li>
+                    <li class="col-md-4"><a href="highscore">Highscore</a></li>
+                   <!-- <li class="col-md-3"><a href="profil">Profil</a></li>    entfernen-->
+                    <li class="col-md-4"><a href="logout">Logout</a></li>
                 </ul>
             </nav>
         </header>
