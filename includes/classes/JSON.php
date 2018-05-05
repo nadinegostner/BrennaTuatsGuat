@@ -5,7 +5,7 @@
 class JSON
 {
 	private $arrData = array();
-	private $result = false;
+	public $result = false;
 	private $message = '';
 
 	public function __construct()
