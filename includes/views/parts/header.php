@@ -11,6 +11,10 @@
 <!--        <link href="css/960gs_16col.css" rel="stylesheet" type="text/css">  -->
         <link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/styleGame.css" rel="stylesheet" type="text/css">
+
+
+
 
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/core.js"></script>

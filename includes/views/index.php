@@ -5,27 +5,139 @@ echo $this->header;
 
 
 ?>
-    <main>
-        <div class="buttonbar">
-            <button type="submit">Leicht</button>
-            <button type="submit">Normal</button>
-            <button type="submit">Profiz&uuml;ndler</button>
-            <button type="button">Klicks</button>
-        </div>
-        <!--TODO: Startseite Spiel mit Playbutton und Schwierigkeitsstufen!-->
+
+<!---->
+<!--    <main>-->
+<!--        <div class="buttonbar">-->
+<!--            <button type="submit" id="btnEasy">Leicht</button>-->
+<!--            <button type="submit" id="btnMiddle">Normal</button>-->
+<!--            <button type="submit" id="btnHard">Profiz&uuml;ndler</button>-->
+<!--        </div>-->
+<!--        <!--TODO: Startseite Spiel mit Playbutton und Schwierigkeitsstufen!-->-->
+<!--    </main>-->
+<!---->
+<!---->
+<!--<script type="text/javascript">-->
+<!--    var userId = '--><?php //echo $this->userid; ?>//
+//<!--</script>-->
+
+<main id="wrapper">
+
+    <h1>blablabla</h1>
+    <h2>Bitte Schwierigkeitsstufe ausw&auml;hlen</h2>
+<h3>ich bin eine geile h3</h3>
+<div class="clear"></div>
+
+    <div id="game">
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"> </div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="row">
+    <div class="offset-md-2 col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    <div class="col-md-1 field"><img src="images/clouds.png"></div>
+    </div>
+    <div class="clear"></div>
+    </div>
 
 
-        <input type="text" name="score" id="score" value="" placeholder="score">
-        <input type="text" name="difficulty" id="difficulty" value="" placeholder="difficulty">
-        <button type="button" id="endgame" class="btn btn-primary">Spiel geschafft</button>
 
+    <div class="buttonmenu">
+    <button class="button col-md-3">leicht</button>
+    <button class="button col-md-3">normal</button>
+    <button class="button col-md-3">Profiz&uuml;ndler</button>
+<button class="button col-md-3">Klicks</button>
+
+    </div>
 
     </main>
 
-
-<script type="text/javascript">
-    var userId = '<?php echo $this->userid; ?>';
-</script>
 
 <?php
 
