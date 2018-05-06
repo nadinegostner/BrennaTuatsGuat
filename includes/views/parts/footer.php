@@ -2,7 +2,7 @@
     <section>
         <div id="quote">
             <p>
-                "Wo is'n die Hüttn <br>
+                "Wo is'n die Hittn <br>
                 Wo der Stadl der brennt"
             </p>
         </div>
@@ -11,9 +11,7 @@
                 Hubert von Goisern
             </p>
         </div>
-        <div id="linkImpressum">
-                <a href="impressum">Impressum</a>
-        </div>
+
     </section>
     <div class="clear"></div>
 </footer>

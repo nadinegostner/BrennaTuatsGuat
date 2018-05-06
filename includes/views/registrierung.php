@@ -38,7 +38,7 @@ echo $this->header;
             <div class="form-group">
                 <div class="form-group col-md-6">
                     <label for="validationDefaultUsername">Username*</label>
-                    <input type="text" name="username" class="form-control" id="validationDefaultUsername" placeholder="Fackelmann" aria-describedby="inputGroupPrepend2" required>
+                    <input type="text" name="name" class="form-control" id="validationDefaultUsername" placeholder="Fackelmann" aria-describedby="inputGroupPrepend2" required>
                 </div>
 
 <!--                <div class="form-group col-md-12">-->
@@ -50,7 +50,7 @@ echo $this->header;
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="password validationDefault04">Passwort*</label>
-                    <input type="password" name="pwd" class="form-control" id="validationDefault04 pwd" placeholder="** Psst! Geheim. **" required>
+                    <input type="password" name="pwd" class="form-control" id="validationDefault04 pwd" placeholder="Passwort" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="confirm_password validationDefault05">Passwort wiederholen*</label>
