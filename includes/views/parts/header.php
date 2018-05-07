@@ -8,12 +8,9 @@
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/toastr.min.css" rel="stylesheet" type="text/css">
-<!--        <link href="css/960gs_16col.css" rel="stylesheet" type="text/css">  -->
         <link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="css/styleGame.css" rel="stylesheet" type="text/css">
-
-
 
 
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -49,7 +46,6 @@
                     <li class="col-xs-4"><a href="index">Start</a></li>
                     <li class="col-xs-4"><a href="highscore">Highscore</a></li>
                    <!-- <li class="col-xs-3"><a href="profil">Profil</a></li>    entfernen-->
-<!--                    <li class="col-xs-4"><a href="logout">Logout <img id="logout_bild" src="images/logout_button/20x20/logout_white.png"> </a> </li>    -->
                     <li class="col-xs-4"><a href="logout">Logout <div id="logout_bild"></div></a> </li>
 
                 </ul>

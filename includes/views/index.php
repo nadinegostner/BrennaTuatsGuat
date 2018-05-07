@@ -52,7 +52,7 @@ echo $this->header;
             <label for="medium">normal</label>
             <input type="radio" id="hard" name="difficulty" value="25" onclick="chosenDifficulty()"/>
             <label for="hard">Profiz&uuml;ndler</label>
-            <button class="button col-xs-3" name="clicks" onclick="chosenDifficulty()" id="clicks">Klicks</button>
+            <button id="button_clicks" class="button col-xs-3" name="clicks" onclick="chosenDifficulty()" id="clicks">Klicks</button>
             <!--Erklärung, wie viele clicks bei jeder Stufe zur Verfügung stehen-->
         </div>
         <div class="clear"></div>
