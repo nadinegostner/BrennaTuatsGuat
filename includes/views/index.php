@@ -30,10 +30,21 @@ echo $this->header;
         }
         document.getElementById("clicks").innerHTML = integerMaxClicks + " Klicks";
     }
+
+
 </script>
 
 
-    <main id="wrapper">
+
+
+
+
+
+
+
+
+
+<main id="wrapper">
 
 
         <h1>Gria&szlig; euch Gott!</h1>
