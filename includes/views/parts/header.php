@@ -33,7 +33,10 @@
             <!--bindet JS für Registrierung ein-->
             <script type="text/javascript" src="js/register.js"></script>
         <?php endif; ?>
-
+        <?php if($this->current == 'index'): ?>
+            <!--bindet Style und JavaScript nur für Spiel ein-->
+            <script type="text/javascript" src="js/game.js"></script>
+        <?php endif; ?>
 
     </head>
 
@@ -46,7 +49,7 @@
                     <li class="col-md-4"><a href="index">Start</a></li>
                     <li class="col-md-4"><a href="highscore">Highscore</a></li>
                    <!-- <li class="col-md-3"><a href="profil">Profil</a></li>    entfernen-->
-                    <li class="col-md-4"><a href="logout">Logout</a></li>
+                    <li class="col-md-4"><a href="logout">Logout <img id="logout_bild" src="images/logout_button/20x20/logout_white.png"> </a> </li>
                 </ul>
             </nav>
         </header>

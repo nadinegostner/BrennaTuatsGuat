@@ -6,6 +6,10 @@ header, footer {margin:0; padding:0;}
 
 /* _____ GRID _____ */
 
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md {
+    margin: 0 auto;
+}
+
 /*
 
 *[class*="grid"] {
@@ -107,6 +111,7 @@ header {
     height: 5em;
     position: fixed;
     opacity: .90;
+    z-index: 1000;
 }
 
 header nav {
@@ -115,7 +120,7 @@ header nav {
     margin-top: 1.7em;
 }
 
-header a {
+header a, a {
     text-decoration: none;
     list-style-type: none;
     color: white;
@@ -128,8 +133,25 @@ li a {
     margin: 0 auto;
 }
 
-header a:hover {
+header a:hover , a:hover{
     color: #E50000;
+}
+
+#logout_bild {
+    margin-left: 15px;
+}
+
+#play_button {
+    height: 240px;
+    width: 240px;
+    background: url(../images/play_button.png) no-repeat center;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#play_button:hover {
+    background: url(../images/play_button_mouseover.png) no-repeat center;
 }
 
 /* _____ MAIN _____ */
@@ -192,17 +214,24 @@ main {
     color: #E50000                              !important;
 }
 
-.whiteframe {
-    width: 720px;               /* ICH MUSS ES IRGENDWIE IN DER HTML-DATEI MIT HILFE DER GRID-KLASSEN SCHAFFEN */
-    background-color: white;
-    padding: 3em 0 3em 0;
-}
-
 .highscore {
     width: 560px;
     content: "";
     margin:auto;
     padding: auto;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    transition: color 300ms linear;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: #E50000;
 }
 
 
@@ -250,6 +279,7 @@ footer a:hover {
     text-transform: capitalize;
 }
 
+/*
 #linkImpressum {
     text-decoration: none;
     list-style-type: none;
@@ -261,7 +291,27 @@ footer a:hover {
 
 #linkImpressum a:hover {
     color: #E50000;
+}*/
+
+.toggle-buttons input[type="radio"]{
+    visibility: hidden;
 }
+
+.toggle-buttons label{
+    padding: 10px                               !important;
+    color: white                                !important;
+    background-color: #E50000                   !important;
+    border-radius:5px                           !important;
+    transition:background-color 300ms linear    !important;
+    transition:color 300ms linear               !important;
+    text-transform: uppercase                   !important;
+}
+.toggle-buttons input:checked + label{
+    background-color:#333                       !important;
+    color: #E50000                              !important;
+
+}
+
 
 #darkOverlay {
     position: fixed;
@@ -292,3 +342,4 @@ footer a:hover {
     z-index: 2;
     cursor: pointer;
 }
+

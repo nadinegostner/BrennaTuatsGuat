@@ -23,16 +23,16 @@ echo $this->header;
                 </div>
             <?php endif; ?>
 
-            <div class="offset-md-2 whiteframe">
-                <div class="form-group">
-                    <div class="form-group offset-md-1 col-md-10 ">
+            <div>
+                <div class="form-row">
+                    <div class="form-group col-md-12 ">
                         <label for="validationDefaultUsername">Username</label>
                         <input type="text" name="username" class="form-control" id="validationDefaultUsername" value="" placeholder="Fackelmann" aria-describedby="inputGroupPrepend2" required>
                     </div>
                 </div>
                 <div class="clear"></div>
                 <div class="form-row">
-                    <div class="form-group offset-md-1 col-md10 ">
+                    <div class="form-group col-md12 ">
                         <label for="password validationDefault04">Passwort</label>
                         <input type="password" name="password" class="form-control" id="password validationDefault04" value="" placeholder="** Psst! Geheim. **" required>
                     </div>
@@ -40,7 +40,7 @@ echo $this->header;
 
                 <div class="form-row">
                     <div class="clear form-group">
-                        <button class="button offset1 col-md-4" type="submit"><p>Sign in</p></button>
+                        <button class="button col-md-4" type="submit">Sign in</button>
                         <input type="hidden" name="action" value="login">
                         <div class="clear"></div>
                     </div>
@@ -50,8 +50,8 @@ echo $this->header;
         </form>
 
         <div class="form-group offset1 col-md4" id="wrapper">
-            Sie haben noch kein Profil?
-            <a href="registrierung">Hier geht's zur Registrierung!</a>
+            <p>Sie haben noch kein Profil?</p>
+            <a href="registrierung"> Hier geht's zur Registrierung!</a>
         </div>
 
         <div class="clear"></div>

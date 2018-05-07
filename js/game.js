@@ -2,20 +2,25 @@
 
 type="text/javascript">
 
+// var random = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //mag er nicht
+// //Alternativ: fixe muster(festes Schema wo die Häuser stehen)
+
+// for (var i = 0; i < 10; i++) {
+//     random[i] = Math.round(Math.random() * (1 - 64)) + 64;
+//     var field = document.getElementById(random[i]);
+//     field.classList.add("strike");
+
+
 var random = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 for (var i = 0; i < 10; i++) {
     random[i] = Math.round(Math.random() * (1 - 64)) + 64;
-    var field = document.getElementById(random[i]);
-    field.classList.add("strike");
-
 }
 
-
-var maxStrikes = 10;
+var maxStrikes = 10;                                            //platzierte Häuser
 var remStrikes = maxStrikes;
 var strikes = document.getElementsByClassName("strike");
-var numbStrikes = 0;
+var numbStrikes = 0;                                            //getroffene Häuser
 
 
 function checkForHit () {
@@ -26,6 +31,7 @@ function checkForHit () {
              strikes.style.backgroundImage = "url(../images/fire_40x40.png) no-repeat center;";
              //counter strikes -> highscore (tatsächlich gebrauchte Klicks)
              remStrikes--;
+             numbStrikes++;
              saveScoreForUser();
              //gesamt Strikes: wenn alle getroffen - Abbruch/Gewonnen
              if(numbStrikes == maxStrikes){
@@ -99,13 +105,7 @@ function saveScoreForUser(difficulty, remStrikes) {
 // //var integerÜbrigeClicks = valueOf(integerMaxClicks);
 // const maxStrikes = 15;
 //
-// /*if (document.getElementById("easy").checked = true){
-//     integerMaxClicks = 45;
-// }else if(document.getElementById("medium").checked = true){
-//     integerMaxClicks = 35;
-// }else if(document.getElementById("hard").checked = true){
-//     integerMaxClicks = 25;
-// }*/
+//
 //
 //
 //

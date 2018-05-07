@@ -85,8 +85,11 @@ CREATE TABLE IF NOT EXISTS `highscore` (
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `userid` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(100) NOT NULL,
-  `password` varchar(250) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `mail` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
   PRIMARY KEY (`userid`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -99,9 +102,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Daten für Tabelle `user`
 --
 
-INSERT INTO `user` (`userid`,`username`, `password`) VALUES
-(2, 'Fackelmann', 'musterpasswort'),
-(3, 'fackeldame', 'fackeldame');
+INSERT INTO `user` (`userid`, `firstname`, `lastname`, `username`, `mail`, `password`) VALUES
+(2, 'Max', 'Mustermann', 'Fackelmann', 'max.mustermann@fackelmann.com', 'musterpasswort'),
+(3, 'Maria', 'Musterfrau', 'fackeldame', 'fackeldame@mail.com', 'fackeldame');
 
 --
 -- Constraints der exportierten Tabellen
