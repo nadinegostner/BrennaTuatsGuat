@@ -30,18 +30,30 @@ echo $this->header;
         }
         document.getElementById("clicks").innerHTML = integerMaxClicks + " Klicks";
     }
+
+
 </script>
 
 
-    <main id="wrapper index">
+
+
+
+
+
+
+
+
+
+<main id="wrapper">
 
 
         <h1>Gria&szlig; euch Gott!</h1>
         <h3>Bitte w&auml;hl' a Schwierigkeitsstufe.</h3>
 
-        <div class="col-xs-12" id="play_button">
-            <a href="game"></a>
-        </div>
+        <a href="game"><div class="col-xs-12" id="play_button"></div></a>
+
+
+        <div class="clear"></div>
 
         <form name="difficulties">
         <div class="toggle-buttons">
@@ -51,9 +63,9 @@ echo $this->header;
             <label for="medium">normal</label>
             <input type="radio" id="hard" name="difficulty" value="25" onclick="chosenDifficulty()"/>
             <label for="hard">Profiz&uuml;ndler</label>
-            <button class="button col-md-3" name="clicks" onclick="chosenDifficulty()" id="clicks">Klicks</button>
+            <button id="button_clicks" class="button col-xs-3" name="clicks" onclick="chosenDifficulty()" id="clicks">Klicks</button>
             <!--Erklärung, wie viele clicks bei jeder Stufe zur Verfügung stehen-->
-
+        </div>
         <div class="clear"></div>
 
 
