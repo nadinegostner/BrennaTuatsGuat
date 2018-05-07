@@ -90,8 +90,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
 }
 
 
@@ -175,9 +175,11 @@ main {
 }
 
 .button, button {
-    text-align:center                           !important;
-    text-decoration:none                        !important;
-    color:white                                 !important;
+    text-align: center                           !important;
+    text-decoration: none                        !important;
+    color: white                                 !important;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .button p, button {
@@ -229,7 +231,9 @@ a:hover {
     background: url(../images/play_button_mouseover.png) no-repeat center;
 }
 
-
+#button_clicks {
+    margin: 0;
+}
 
 #logo {
     margin-left: 22.2%;
