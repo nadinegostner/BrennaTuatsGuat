@@ -95,8 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
 /* _____ HEADER _____ */
 
 header {
@@ -231,6 +229,8 @@ a:hover {
     background: url(../images/play_button_mouseover.png) no-repeat center;
 }
 
+
+
 #logo {
     margin-left: 22.2%;
 }
@@ -283,7 +283,7 @@ footer .flex-container {
 
 #linkImpressum a:hover {
     color: #E50000;
-}*/
+}
 
 .toggle-buttons input[type="radio"]{
     visibility: hidden;
@@ -297,11 +297,12 @@ footer .flex-container {
     transition:background-color 300ms linear    !important;
     transition:color 300ms linear               !important;
     text-transform: uppercase                   !important;
+    width: 21%;
+    text-align: center;
 }
 .toggle-buttons input:checked + label{
     background-color:#333                       !important;
     color: #E50000                              !important;
-
 }
 
 
