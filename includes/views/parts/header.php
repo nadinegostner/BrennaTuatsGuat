@@ -33,7 +33,10 @@
             <!--bindet JS für Registrierung ein-->
             <script type="text/javascript" src="js/register.js"></script>
         <?php endif; ?>
-
+        <?php if($this->current == 'index'): ?>
+            <!--bindet Style und JavaScript nur für Spiel ein-->
+            <script type="text/javascript" src="js/game.js"></script>
+        <?php endif; ?>
 
     </head>
 
