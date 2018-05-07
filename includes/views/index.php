@@ -4,6 +4,7 @@ echo $this->header;
 
 
 
+
 <!--<script type="text/javascript">-->
 <!--    if (easy.checked() == true){-->
 <!--        integerMaxClicks = 45;-->
@@ -34,10 +35,11 @@ echo $this->header;
 
     <main id="wrapper index">
 
-        <h1>Gria&szlig; euch Gott!</h1>
-        <h2>Bitte w&auml;hl' a Schwierigkeitsstufe.</h2>
 
-        <div class="col-md12" id="play_button">
+        <h1>Gria&szlig; euch Gott!</h1>
+        <h3>Bitte w&auml;hl' a Schwierigkeitsstufe.</h3>
+
+        <div class="col-xs-12" id="play_button">
             <a href="game"></a>
         </div>
 
@@ -51,7 +53,17 @@ echo $this->header;
             <label for="hard">Profiz&uuml;ndler</label>
             <button class="button col-md-3" name="clicks" onclick="chosenDifficulty()" id="clicks">Klicks</button>
             <!--Erklärung, wie viele clicks bei jeder Stufe zur Verfügung stehen-->
-        </div>
+
+        <div class="clear"></div>
+
+
+<!--        <div class="buttonmenu">-->
+<!--            <button class="button col-xs-3">leicht</button>-->
+<!--            <button class="button col-xs-3">normal</button>-->
+<!--            <button class="button col-xs-3">Profiz&uuml;ndler</button>-->
+<!--            <button class="button col-xs-3">Klicks</button>-->
+<!---->
+<!--        </div>-->
         </form>
 
 

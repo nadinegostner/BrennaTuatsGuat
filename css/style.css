@@ -6,9 +6,6 @@ header, footer {margin:0; padding:0;}
 
 /* _____ GRID _____ */
 
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md {
-    margin: 0 auto;
-}
 
 /*
 
@@ -93,13 +90,10 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
-#login {
-    background: url("../images/burning-house/brand-feuer-flammen.jpg") no-repeat center;
-}
 
 
 
@@ -115,7 +109,7 @@ header {
 }
 
 header nav {
-    width: 960px;
+    width: 720px;
     margin: 0 auto;
     margin-top: 1.7em;
 }
@@ -128,46 +122,34 @@ header a, a {
     text-transform: uppercase;
     margin: 0 auto;
 }
-
-li a {
-    margin: 0 auto;
-}
-
 header a:hover , a:hover{
     color: #E50000;
 }
 
 #logout_bild {
-    margin-left: 15px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/logout_button/20x20/logout_white.png) no-repeat center;
+    float: left;
 }
 
-#play_button {
-    height: 240px;
-    width: 240px;
-    background: url(../images/play_button.png) no-repeat center;
-    margin: 0 auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
+#logout_bild:hover {
+    background: url(../images/logout_button/20x20/logout_red.png) no-repeat center;
 }
 
-#play_button:hover {
-    background: url(../images/play_button_mouseover.png) no-repeat center;
-}
+
 
 /* _____ MAIN _____ */
 
 main {
     padding-top: 10em;
-/*
-    width: 960px;
-    margin: 0 auto;
-*/
 }
 
 #wrapper {
     padding-top: 10em;
     padding-bottom: 3em;
-    width: 960px;
+    width: 720px;
     margin: 0 auto;
 }
 
@@ -175,6 +157,7 @@ main {
     margin-top: 3em;
     margin-bottom: 3em;
 }
+
 
 .field {
     background-color: #ababab;
@@ -234,7 +217,30 @@ a:hover {
     color: #E50000;
 }
 
+#play_button {
+    height: 240px;
+    width: 240px;
+    background: url(../images/play_button.png) no-repeat center;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 33.3%;
+}
 
+#play_button:hover {
+    background: url(../images/play_button_mouseover.png) no-repeat center;
+}
+
+#logo {
+    margin-left: 22.2%;
+}
+
+.col-xs-12 {
+    margin: auto;
+}
+.impressum {
+    text-align: center;
+}
 
 /* _____ FOOTER _____ */
 
@@ -242,31 +248,19 @@ a:hover {
 footer {
     background-color: #d1d1d1;
     width: 100%;
-    height: 4em;
-    line-height: 1.7em;
+    height: 7em;
+    line-height: 2em;
     margin-top: 2em;
+    padding: 1em 0 1em 0;
 }
 
 footer .flex-container {
-    width: 960px;
+    width: 720px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
 
-/*footer section div a {
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    transition: color 300ms linear;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-
-
-footer a:hover {
-    color: #E50000;
-}*/
 
 #quote {
     text-align: justify;
@@ -279,14 +273,12 @@ footer a:hover {
     text-transform: capitalize;
 }
 
-/*
 #linkImpressum {
     text-decoration: none;
     list-style-type: none;
     color: white;
     transition: color 300ms linear;
     text-transform: uppercase;
-    margin: 0 auto;
 }
 
 #linkImpressum a:hover {
@@ -342,4 +334,5 @@ footer a:hover {
     z-index: 2;
     cursor: pointer;
 }
+
 
