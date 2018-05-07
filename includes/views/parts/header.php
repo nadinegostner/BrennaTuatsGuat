@@ -46,7 +46,7 @@
                     <li class="col-md-4"><a href="index">Start</a></li>
                     <li class="col-md-4"><a href="highscore">Highscore</a></li>
                    <!-- <li class="col-md-3"><a href="profil">Profil</a></li>    entfernen-->
-                    <li class="col-md-4"><a href="logout">Logout</a></li>
+                    <li class="col-md-4"><a href="logout">Logout <img id="logout_bild" src="images/logout_button/20x20/logout_white.png"> </a> </li>
                 </ul>
             </nav>
         </header>
