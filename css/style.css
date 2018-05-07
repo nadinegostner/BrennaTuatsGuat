@@ -144,10 +144,6 @@ header a:hover , a:hover{
 
 main {
     padding-top: 10em;
-/*
-    width: 720px;
-    margin: 0 auto;
-*/
 }
 
 #wrapper {
@@ -228,6 +224,7 @@ a:hover {
     margin: 0 auto;
     margin-top: 5em;
     margin-bottom: 5em;
+    margin-left: 33.3%;
 }
 
 #play_button:hover {
@@ -235,9 +232,12 @@ a:hover {
 }
 
 #logo {
-    margin: 0 auto;
+    margin-left: 22.2%;
 }
 
+.col-xs-12 {
+    margin: auto;
+}
 .impressum {
     text-align: center;
 }

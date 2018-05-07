@@ -32,14 +32,14 @@ echo $this->header;
                 </div>
                 <div class="clear"></div>
                 <div class="form-row">
-                    <div class="form-group col-xs12 ">
+                    <div class="form-group col-xs-12 ">
                         <label for="password validationDefault04">Passwort</label>
                         <input type="password" name="password" class="form-control" id="password validationDefault04" value="" placeholder="** Psst! Geheim. **" required>
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <div class="clear form-group">
+                    <div class="clear form-group col-xs-12">
                         <button class="button col-xs-4" type="submit">Sign in</button>
                         <input type="hidden" name="action" value="login">
                         <div class="clear"></div>
@@ -49,7 +49,7 @@ echo $this->header;
 
         </form>
 
-        <div class="form-group offset1 col-xs4" id="wrapper">
+        <div class="form-group col-xs-12">
             <p>Sie haben noch kein Profil?</p>
             <a href="registrierung"> Hier geht's zur Registrierung!</a>
         </div>

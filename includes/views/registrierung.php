@@ -71,7 +71,7 @@ echo $this->header;
             <input type="hidden" name="action" value="register">
 
             <div>
-                <button class="button col-xs-3 btn-primary" type="submit">Sign in</button>
+                <button class="button col-xs-3" type="submit">Sign in</button>
             </div>
         </form>
 
