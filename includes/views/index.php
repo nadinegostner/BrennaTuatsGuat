@@ -129,11 +129,10 @@ echo $this->header;
 
 
     <div class="buttonmenu">
-    <button class="button col-md-3">leicht</button>
-    <button class="button col-md-3">normal</button>
-    <button class="button col-md-3">Profiz&uuml;ndler</button>
-<button class="button col-md-3">Klicks</button>
-
+        <button class="button col-md-3">leicht</button>
+        <button class="button col-md-3">normal</button>
+        <button class="button col-md-3">Profiz&uuml;ndler</button>
+        <button class="button col-md-3">Klicks</button>
     </div>
 
     </main>

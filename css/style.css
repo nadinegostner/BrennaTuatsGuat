@@ -218,10 +218,11 @@ footer {
     margin-top: 2em;
 }
 
-footer section {
+footer .flex-container {
     width: 960px;
     margin: 0 auto;
-    float: left;
+    display: flex;
+    flex-direction: row;
 }
 
 /*footer section div a {

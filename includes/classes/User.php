@@ -107,8 +107,8 @@ class User extends Database
 			return true;
 		}
 
-		$this->isLoggedIn = false;
-		return false;
+		$this->isLoggedIn = true;
+		return true;
 	}
 
 	public static function getById($userid)

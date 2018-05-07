@@ -8,13 +8,7 @@ class ImpressumController extends Controller
 
     public function run()
     {
-      /*  $this->view->title = "Highscore";
-        $this->view->username = $this->user->username;
-        $this->view->userid = $this->user->userid;
-
-        //$this->view->highscores = HighscoreModel::getAllScores();
-
-        $this->view->highscores = HighscoreModel::getAllScores();*/
+        $this->view->title = "Impressum";
     }
 
 
