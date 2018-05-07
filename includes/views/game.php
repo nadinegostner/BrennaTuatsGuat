@@ -25,7 +25,7 @@ echo $this->header;
             random[i] = Math.round(Math.random() * (1 - 64)) + 64;
         }
 
-        var maxClicks = 70;
+        var maxClicks = 32;
         var maxStrikes = 10;                                            //platzierte Häuser
         var remStrikes = maxClicks;
         var numbStrikes = 0;                                            //getroffene Häuser
