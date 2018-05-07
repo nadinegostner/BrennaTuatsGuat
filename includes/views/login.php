@@ -5,7 +5,7 @@ echo $this->header;
 ?>
     <main id="wrapper login">
         <div class="col-md-12" id="logo">
-            <img src="images/Logo_font.png" alt="Logo Brenna Tuats Guat">
+            <img src="images/logo/Logo_font.png" alt="Logo Brenna Tuats Guat">
         </div>
 
         <h1>Login</h1>
