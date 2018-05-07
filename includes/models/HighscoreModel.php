@@ -20,7 +20,14 @@ class HighscoreModel
 	{
 		$db = new Database();
 
-		$sql = "SELECT * FROM highscore ORDER BY score DESC";
+		$sql = /*"SELECT * FROM highscore ORDER BY score DESC";*/
+		"SELECT highscore.score, difficulties.description, user.username
+                FROM highscore 
+                LEFT OUTER JOIN user 
+                ON (user.userid = highscore.playerid)
+                LEFT OUTER JOIN difficulties 
+                ON (difficulties.difficultyid = highscore.difficulty)
+                ORDER BY score DESC";
 		$result = $db->query($sql);
 
 		if($db->numRows($result) > 0)

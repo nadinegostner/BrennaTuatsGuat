@@ -29,3 +29,7 @@ $route['/highscore.html'] = array('controller' => 'HighscoreController', 'unique
 $route['/impressum'] = array('controller' => 'ImpressumController', 'uniqueName' => 'impressum');
 $route['/impressum.php'] = array('controller' => 'ImpressumController', 'uniqueName' => 'impressum');
 $route['/impressum.html'] = array('controller' => 'ImpressumController', 'uniqueName' => 'impressum');
+
+$route['/game'] = array('controller' => 'GameController', 'uniqueName' => 'game');
+$route['/game.php'] = array('controller' => 'GameController', 'uniqueName' => 'game');
+$route['/game.html'] = array('controller' => 'GameController', 'uniqueName' => 'game');

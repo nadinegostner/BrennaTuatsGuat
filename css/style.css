@@ -6,6 +6,7 @@ header, footer {margin:0; padding:0;}
 
 /* _____ GRID _____ */
 
+
 /*
 
 *[class*="grid"] {
@@ -89,13 +90,10 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
-#login {
-    background: url("../images/burning-house/brand-feuer-flammen.jpg") no-repeat center;
-}
 
 
 
@@ -107,15 +105,16 @@ header {
     height: 5em;
     position: fixed;
     opacity: .90;
+    z-index: 1000;
 }
 
 header nav {
-    width: 960px;
+    width: 720px;
     margin: 0 auto;
     margin-top: 1.7em;
 }
 
-header a {
+header a, a {
     text-decoration: none;
     list-style-type: none;
     color: white;
@@ -123,29 +122,34 @@ header a {
     text-transform: uppercase;
     margin: 0 auto;
 }
-
-li a {
-    margin: 0 auto;
-}
-
-header a:hover {
+header a:hover , a:hover{
     color: #E50000;
 }
+
+#logout_bild {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/logout_button/20x20/logout_white.png) no-repeat center;
+    float: left;
+}
+
+#logout_bild:hover {
+    background: url(../images/logout_button/20x20/logout_red.png) no-repeat center;
+}
+
+
 
 /* _____ MAIN _____ */
 
 main {
     padding-top: 10em;
-/*
-    width: 960px;
-    margin: 0 auto;
-*/
 }
 
 #wrapper {
     padding-top: 10em;
     padding-bottom: 3em;
-    width: 960px;
+    width: 720px;
     margin: 0 auto;
 }
 
@@ -153,6 +157,7 @@ main {
     margin-top: 3em;
     margin-bottom: 3em;
 }
+
 
 .field {
     background-color: #ababab;
@@ -192,12 +197,6 @@ main {
     color: #E50000                              !important;
 }
 
-.whiteframe {
-    width: 720px;               /* ICH MUSS ES IRGENDWIE IN DER HTML-DATEI MIT HILFE DER GRID-KLASSEN SCHAFFEN */
-    background-color: white;
-    padding: 3em 0 3em 0;
-}
-
 .highscore {
     width: 560px;
     content: "";
@@ -205,7 +204,43 @@ main {
     padding: auto;
 }
 
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    transition: color 300ms linear;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
 
+a:hover {
+    color: #E50000;
+}
+
+#play_button {
+    height: 240px;
+    width: 240px;
+    background: url(../images/play_button.png) no-repeat center;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 33.3%;
+}
+
+#play_button:hover {
+    background: url(../images/play_button_mouseover.png) no-repeat center;
+}
+
+#logo {
+    margin-left: 22.2%;
+}
+
+.col-xs-12 {
+    margin: auto;
+}
+.impressum {
+    text-align: center;
+}
 
 /* _____ FOOTER _____ */
 
@@ -213,31 +248,19 @@ main {
 footer {
     background-color: #d1d1d1;
     width: 100%;
-    height: 4em;
-    line-height: 1.7em;
+    height: 7em;
+    line-height: 2em;
     margin-top: 2em;
+    padding: 1em 0 1em 0;
 }
 
 footer .flex-container {
-    width: 960px;
+    width: 720px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
 
-/*footer section div a {
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    transition: color 300ms linear;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-
-
-footer a:hover {
-    color: #E50000;
-}*/
 
 #quote {
     text-align: justify;
@@ -256,9 +279,60 @@ footer a:hover {
     color: white;
     transition: color 300ms linear;
     text-transform: uppercase;
-    margin: 0 auto;
 }
 
 #linkImpressum a:hover {
     color: #E50000;
+}*/
+
+.toggle-buttons input[type="radio"]{
+    visibility: hidden;
 }
+
+.toggle-buttons label{
+    padding: 10px                               !important;
+    color: white                                !important;
+    background-color: #E50000                   !important;
+    border-radius:5px                           !important;
+    transition:background-color 300ms linear    !important;
+    transition:color 300ms linear               !important;
+    text-transform: uppercase                   !important;
+}
+.toggle-buttons input:checked + label{
+    background-color:#333                       !important;
+    color: #E50000                              !important;
+
+}
+
+
+#darkOverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#contentOverlay {
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    right: 25%;
+    bottom: 25%;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
